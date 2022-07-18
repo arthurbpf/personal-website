@@ -1,3 +1,15 @@
+:root {
+	--background-color: #ffffff;
+	--primary-color: #111;
+	--secondary-color: #f00;
+	--font-color: #fff;
+}
+
+:root[data-theme='dark'] {
+	--background-color: #000;
+	--primary-color: #500;
+}
+
 html,
 body {
 	padding: 0;
