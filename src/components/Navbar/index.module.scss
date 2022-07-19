@@ -1,0 +1,11 @@
+.rootContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.itemsContainer {
+	margin: 0.2em 1em;
+	// background-color: var(--secondary-color);
+	// color: var(--background-color);
+}

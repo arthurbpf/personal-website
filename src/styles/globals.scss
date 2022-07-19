@@ -1,21 +1,27 @@
 :root {
-	--background-color: #ffffff;
-	--primary-color: #111;
-	--secondary-color: #f00;
-	--font-color: #fff;
+	--background-color: #151515;
+	--font-primary-color: #d2d2d2;
+	--font-secondary-color: #d2d2d2;
+	--primary-color: #1d66b8;
+	--secondary-color: #d2d2d2;
 }
 
-:root[data-theme='dark'] {
-	--background-color: #000;
-	--primary-color: #500;
+:root[data-theme='light'] {
 }
 
 html,
-body {
+body,
+#__next {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--background-color);
 	padding: 0;
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	color: var(--font-primary-color);
 }
 
 a {
