@@ -1,13 +1,5 @@
-:root {
-	--background-color: #151515;
-	--font-primary-color: #d2d2d2;
-	--font-secondary-color: #d2d2d2;
-	--primary-color: #1d66b8;
-	--secondary-color: #d2d2d2;
-}
-
-:root[data-theme='light'] {
-}
+@forward 'colors.scss';
+@forward 'fonts.scss';
 
 html,
 body,
@@ -19,14 +11,18 @@ body,
 	background-color: var(--background-color);
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: WorkSans;
 	color: var(--font-primary-color);
 }
 
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+a,
+p {
+	font-weight: normal;
 }
 
 * {

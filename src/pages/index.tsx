@@ -10,7 +10,15 @@ const Home: NextPage = () => {
 	const headerTypewriter = (
 		<Typewriter
 			options={{
-				strings: ['Hello', 'Olá', 'Hola', 'Ciao', 'こんにちは', '你好'],
+				strings: [
+					'Hello',
+					'Olá',
+					'Hola',
+					'Hallo',
+					'Ciao',
+					'こんにちは',
+					'你好'
+				],
 				autoStart: true,
 				loop: true
 			}}

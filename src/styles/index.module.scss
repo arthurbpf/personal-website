@@ -18,6 +18,8 @@
 .introductionText {
 	margin: 3em;
 	font-size: 2em;
+	text-align: justify;
+	text-align-last: center;
 }
 
 .contactContainer {
@@ -38,7 +40,7 @@
 		transition: color 0.2s, transform 0.2s;
 		&:hover {
 			color: var(--primary-color);
-			transform: scale(140%);
+			transform: scale(120%);
 		}
 	}
 }
