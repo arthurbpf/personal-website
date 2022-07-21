@@ -5,6 +5,7 @@ import Typewriter from 'typewriter-effect';
 import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import Navbar from '../components/Navbar';
+import Head from 'next/head';
 
 const Home: NextPage = () => {
 	const headerTypewriter = (
@@ -27,6 +28,13 @@ const Home: NextPage = () => {
 
 	return (
 		<div className={styles.rootContainer}>
+			<Head>
+				<title>Home</title>
+				<meta
+					name="description"
+					content="A brief introduction and links to my social media"
+				/>
+			</Head>
 			<Navbar></Navbar>
 			<div className={styles.contentContainer}>
 				<Header headerTitle={headerTypewriter} />
