@@ -1,0 +1,53 @@
+$breakpoints: (
+	'sm': (
+		max-width: 576px
+	),
+	'md': (
+		min-width: 577px
+	),
+	'lg': (
+		min-width: 992px
+	),
+	'xl': (
+		min-width: 1200px
+	)
+) !default;
+
+/// Mixin to manage responsive breakpoints
+/// @author Kitty Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media #{inspect(map-get($breakpoints, $breakpoint))} {
+			@content;
+		}
+	} @else {
+		@warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+	}
+}
+
+@mixin sm {
+	@include respond-to('sm') {
+		@content;
+	}
+}
+
+@mixin md {
+	@include respond-to('md') {
+		@content;
+	}
+}
+
+@mixin lg {
+	@include respond-to('lg') {
+		@content;
+	}
+}
+
+@mixin xl {
+	@include respond-to('xl') {
+		@content;
+	}
+}

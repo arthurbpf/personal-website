@@ -1,5 +1,6 @@
-@forward 'colors.scss';
-@forward 'fonts.scss';
+@forward 'colors';
+@forward 'fonts';
+@use 'breakpoints';
 
 html,
 body,
@@ -13,6 +14,10 @@ body,
 	margin: 0;
 	font-family: WorkSans;
 	color: var(--font-primary-color);
+
+	@include breakpoints.sm {
+		font-size: 90%;
+	}
 }
 
 a {

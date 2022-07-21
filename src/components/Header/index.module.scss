@@ -2,18 +2,18 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 500px;
+	width: 100%;
 	margin-top: 3em;
 }
 
 .titleContainer {
+	width: 100%;
 	background-color: var(--primary-color);
 	color: var(--background-color);
 	flex: 1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	max-width: 800px;
 	height: 6em;
-	font-size: 1.5em;
+	font-size: 1.8em;
 }

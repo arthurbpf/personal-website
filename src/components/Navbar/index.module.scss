@@ -1,12 +1,15 @@
+@use '/src/styles/breakpoints';
+
 .rootContainer {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+
+	@include breakpoints.sm {
+		margin-top: 2em;
+	}
 }
 
 .itemContainer {
-	margin: 0.2em 1em;
 	font-weight: lighter;
-	// background-color: var(--secondary-color);
-	// color: var(--background-color);
 }
