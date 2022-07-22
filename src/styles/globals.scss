@@ -12,7 +12,7 @@ body,
 	background-color: var(--background-color);
 	padding: 0;
 	margin: 0;
-	font-family: WorkSans;
+	font-family: WorkSans, Helvetica;
 	color: var(--font-primary-color);
 
 	@include breakpoints.sm {
