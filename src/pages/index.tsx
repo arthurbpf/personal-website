@@ -29,7 +29,7 @@ const Home: NextPage = () => {
 	return (
 		<div className={styles.rootContainer}>
 			<Head>
-				<title>Home</title>
+				<title>Arthur Fernandes - Home</title>
 				<meta
 					name="description"
 					content="A brief introduction and links to my social media"
