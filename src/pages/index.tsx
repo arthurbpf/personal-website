@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 	);
 
 	return (
-		<div className={styles.rootContainer}>
+		<>
 			<Head>
 				<title>Arthur Fernandes - Home</title>
 				<meta
@@ -35,59 +35,65 @@ const Home: NextPage = () => {
 					content="A brief introduction and links to my social media"
 				/>
 			</Head>
-			<Navbar></Navbar>
-			<div className={styles.contentContainer}>
-				<Header headerTitle={headerTypewriter} />
 
-				<main>
-					<p className={styles.introductionText}>
-						My name is Arthur, and this is an attempt at creating a personal
-						space to share things that I am enthusiastic about!
-					</p>
+			<div className={styles.rootContainer}>
+				<Navbar></Navbar>
 
-					<div className={styles.contactContainer}>
-						<h2>You can find me here:</h2>
-						<div className={styles.iconsContainer}>
-							<a
-								href="https://github.com/arthurbpf"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<FaGithub />
-							</a>
-							<a
-								href="https://linkedin.com/in/arthurbpf"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<FaLinkedinIn />
-							</a>
-							<a
-								href="https://twitter.com/arthurbpf"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<FaTwitter />
-							</a>
-							<a
-								href="https://www.instagram.com/arthurbpf_/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<FaInstagram />
-							</a>
-							<a
-								href="mailto:arthurbpfernandes@gmail.com"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<HiMail />
-							</a>
+				<div className={styles.headerContainer}>
+					<Header headerTitle={headerTypewriter} />
+				</div>
+
+				<div className={styles.contentContainer}>
+					<main>
+						<p className={styles.introductionText}>
+							My name is Arthur, and this is an attempt at creating a personal
+							space to share things that I am enthusiastic about!
+						</p>
+
+						<div className={styles.contactContainer}>
+							<h2>You can find me here:</h2>
+							<div className={styles.iconsContainer}>
+								<a
+									href="https://github.com/arthurbpf"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<FaGithub />
+								</a>
+								<a
+									href="https://linkedin.com/in/arthurbpf"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<FaLinkedinIn />
+								</a>
+								<a
+									href="https://twitter.com/arthurbpf"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<FaTwitter />
+								</a>
+								<a
+									href="https://www.instagram.com/arthurbpf_/"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<FaInstagram />
+								</a>
+								<a
+									href="mailto:arthurbpfernandes@gmail.com"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<HiMail />
+								</a>
+							</div>
 						</div>
-					</div>
-				</main>
+					</main>
+				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 

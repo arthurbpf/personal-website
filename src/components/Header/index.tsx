@@ -1,17 +1,17 @@
-import styles from './index.module.scss';
-import { FC } from 'react';
+import DotGrid from './DotGrid';
+import RotationWrapper from './RotationWrapper';
+import TitleBox from './TitleBox';
 
-interface HeaderProps {
-	headerTitle: JSX.Element;
+interface Props {
+	headerTitle: React.ReactNode | JSX.Element;
 }
 
-const Header: FC<HeaderProps> = ({ headerTitle }) => {
+const Header: React.FC<Props> = ({ headerTitle }) => {
 	return (
-		<header className={styles.headerContainer}>
-			<div className={styles.titleContainer}>
-				<h1>{headerTitle}</h1>
-			</div>
-		</header>
+		<RotationWrapper>
+			<DotGrid />
+			<TitleBox headerTitle={headerTitle} />
+		</RotationWrapper>
 	);
 };
 
