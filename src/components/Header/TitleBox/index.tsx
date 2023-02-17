@@ -9,9 +9,6 @@ const TitleBox: FC<HeaderProps> = ({ headerTitle }) => {
 	return (
 		<header className={styles.headerContainer}>
 			<div className={styles.titleContainer}>
-				{/*
-					workaround for backdrop-filter having no effect when text is empty
-				*/}
 				<h1>{headerTitle}</h1>
 			</div>
 		</header>
