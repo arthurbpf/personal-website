@@ -23,7 +23,7 @@ const RotationWrapper: React.FC<Props> = ({ children }) => {
 				onMouseMove={(event) => {
 					const rect = event.currentTarget.getBoundingClientRect();
 
-					animate(x, event.clientX - rect.left);
+					animate(x, (event.clientX - rect.left) / 2);
 					animate(y, event.clientY - rect.top);
 				}}
 				onMouseLeave={() => {
